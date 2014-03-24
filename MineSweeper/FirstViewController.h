@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<UIAlertViewDelegate>
+@property (strong, nonatomic) UIColor * color;
+- (IBAction)showActionSheet:(UIButton *)sender;
 
 @end
